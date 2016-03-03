@@ -1,0 +1,11 @@
+<templateSet group="laravel">
+  <template name="_form" value="&lt;p&gt;&#10;    &lt;label for=&quot;$interview_process$&quot;&gt;$NAME$&lt;/label&gt;&#10;    {!! Form::text('$interview_process$', null, array(['class' =&gt; 'form-control'])) !!}&#10;&lt;/p&gt;&#10;" toReformat="false" toShortenFQNames="true">
+    <variable name="interview_process" expression="" defaultValue="field_name" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="FieldTitle" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
