@@ -1,4 +1,4 @@
-<scheme name="shawn-sandy" version="142" parent_scheme="Default">
+<scheme name="shawn" version="142" parent_scheme="Default">
   <option name="LINE_SPACING" value="1.6" />
   <font>
     <option name="EDITOR_FONT_NAME" value="Fira Code" />
@@ -1077,7 +1077,7 @@
     </option>
     <option name="PHP_VAR">
       <value>
-        <option name="FOREGROUND" value="ff3b00" />
+        <option name="FOREGROUND" value="ff5370" />
       </value>
     </option>
     <option name="PROPERTIES.INVALID_STRING_ESCAPE">
