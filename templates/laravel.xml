@@ -1,0 +1,29 @@
+<templateSet group="Laravel">
+  <template name="_phpunit" value=" /**&#10;     * $DESCRIPTION$&#10;     * @test&#10;     */&#10;    function $can_view_static_pages$(){&#10;      &#10;    }" description="Create a test object" toReformat="false" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="capitalize(String)" defaultValue="Describe test" alwaysStopAt="true" />
+    <variable name="can_view_static_pages" expression="decapitalize(String)" defaultValue="test_name_here" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="_addroute" value="Route::get(&quot;/$NAME$&quot;, &quot;$CONTORLLER$@$METHOD$&quot;);" description="add a route" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONTORLLER" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="METHOD" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="_form" value="&lt;p&gt;&lt;label for=&quot;$NAME$&quot;&gt;$LABEL$&lt;/label&gt;&#10;    {!! Form::text('$NAME$', null, ['class' =&gt; 'form-control']) !!}&#10;&lt;/p&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="name" alwaysStopAt="true" />
+    <variable name="LABEL" expression="" defaultValue="label" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="Twig" value="true" />
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="true" />
+      <option name="PHP String Literal" value="true" />
+    </context>
+  </template>
+</templateSet>

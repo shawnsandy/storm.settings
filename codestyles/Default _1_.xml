@@ -1,0 +1,11 @@
+<code_scheme name="Default (1)">
+  <PHPCodeStyleSettings>
+    <option name="PREFER_TEMPLATE_INDENTS" value="true" />
+  </PHPCodeStyleSettings>
+  <XML>
+    <option name="XML_LEGACY_SETTINGS_IMPORTED" value="true" />
+  </XML>
+  <codeStyleSettings language="PHP">
+    <option name="METHOD_BRACE_STYLE" value="1" />
+  </codeStyleSettings>
+</code_scheme>
