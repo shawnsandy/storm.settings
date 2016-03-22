@@ -1,4 +1,4 @@
-<scheme name="Material Theme - php" version="142" parent_scheme="Default">
+<scheme name="shawn" version="142" parent_scheme="Default">
   <option name="LINE_SPACING" value="1.6" />
   <font>
     <option name="EDITOR_FONT_NAME" value="Fira Code" />
@@ -1067,7 +1067,7 @@
     </option>
     <option name="PHP_PARAMETER">
       <value>
-        <option name="FOREGROUND" value="ec0000" />
+        <option name="FOREGROUND" value="ff0000" />
       </value>
     </option>
     <option name="PHP_TAG">
