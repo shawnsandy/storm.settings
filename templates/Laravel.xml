@@ -14,9 +14,10 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="_form" value="&lt;p&gt;&lt;label for=&quot;$NAME$&quot;&gt;$LABEL$&lt;/label&gt;&#10;    {!! Form::text('$NAME$', null, ['class' =&gt; 'form-control']) !!}&#10;&lt;/p&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="blade-input" value="&lt;p&gt;&lt;label for=&quot;$NAME$&quot;&gt;$LABEL$&lt;/label&gt;&#10;    {!! Form::$text$('$NAME$', null, ['class' =&gt; 'form-control']) !!}&#10;&lt;/p&gt;" description="form input" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="name" alwaysStopAt="true" />
     <variable name="LABEL" expression="" defaultValue="label" alwaysStopAt="true" />
+    <variable name="text" expression="" defaultValue="text" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
@@ -26,8 +27,10 @@
       <option name="PHP String Literal" value="true" />
     </context>
   </template>
-  <template name="quick-table" value=" &lt;table class=&quot;table&quot;&gt;&#10;                    &lt;thead&gt;&#10;                        &lt;tr&gt;&#10;                            &lt;td&gt;$Labelhere$&lt;/td&gt;&#10;                        &lt;/tr&gt;&#10;&#10;                    &lt;/thead&gt;&#10;                    &lt;tbody&gt;&#10;                        &lt;tr&gt;&#10;                            &lt;td&gt;Descrtiption here&lt;/td&gt;&#10;                            &lt;td&gt;&#10;                               &lt;button&gt;View&lt;/button&gt;&#10;                            &lt;/td&gt;&#10;                        &lt;/tr&gt;&#10;                   &#10;                    &lt;/tbody&gt;&#10;&#10;                &lt;/table&gt;" toReformat="true" toShortenFQNames="true">
-    <variable name="Labelhere" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="ss-table" value=" &lt;table class=&quot;table&quot;&gt;&#10;                    &lt;thead&gt;&#10;                    &lt;tr&gt;&#10;                        &lt;td&gt;$Title$&lt;/td&gt;&#10;                        &lt;td&gt;$Description$&lt;/td&gt;&#10;                        &lt;td&gt;$View$&lt;/td&gt;&#10;                    &lt;/tr&gt;&#10;                    &lt;/thead&gt;&#10;                    &lt;tbody&gt;&#10;                    &lt;tr&gt;&#10;                        &lt;td&gt;Title here&lt;/td&gt;&#10;                        &lt;td&gt;Description here&lt;/td&gt;&#10;                        &lt;td class=&quot;text-right&quot;&gt;&#10;                            &lt;a href=&quot;&quot; class=&quot;btn btn-xs btn-link&quot;&gt;Link&lt;/a&gt;&#10;                        &lt;/td&gt;&#10;                    &lt;/tr&gt;&#10;&#10;                    &lt;/tbody&gt;&#10;&#10;                &lt;/table&gt;" toReformat="true" toShortenFQNames="true">
+    <variable name="Title" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Description" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="View" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
@@ -54,6 +57,42 @@
       <option name="PHP String Literal" value="true" />
       <option name="HAML" value="true" />
       <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="blade-datatables" value="@push('styles')&#10;&lt;link rel=&quot;stylesheet&quot; href=&quot;{{ asset('js/datatables/css/jquery.dataTables.css') }}&quot;&gt;&#10;@endpush&#10;@push('scripts')&#10;&lt;script src=&quot;{{ asset('js/datatables/jquery.dataTables.js') }}&quot;&gt;&lt;/script&gt;&#10;&lt;script src=&quot;{{ asset('js/scripts.js') }}&quot;&gt;&lt;/script&gt;&#10;@endpush" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+      <option name="JSON" value="true" />
+      <option name="SQL" value="true" />
+      <option name="JSP" value="true" />
+      <option name="CSS_PROPERTY_VALUE" value="true" />
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+      <option name="CSS_RULESET_LIST" value="true" />
+      <option name="CSS" value="true" />
+      <option name="Twig" value="true" />
+      <option name="CUCUMBER_FEATURE_FILE" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TypeScript" value="true" />
+      <option name="CoffeeScript" value="true" />
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="true" />
+      <option name="PHP String Literal" value="true" />
+      <option name="HAML" value="true" />
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="blade-form" value="{!! Form::open(['url' =&gt; '/']) !!}&#10;&#10;{!! Form::submit('Submit',['class' =&gt; 'btn btn-success']) !!}&#10;{!! Form::close() !!}" description="blade from" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
     </context>
   </template>
 </templateSet>
