@@ -14,9 +14,10 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="_form" value="&lt;p&gt;&lt;label for=&quot;$NAME$&quot;&gt;$LABEL$&lt;/label&gt;&#10;    {!! Form::text('$NAME$', null, ['class' =&gt; 'form-control']) !!}&#10;&lt;/p&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="blade-input" value="&lt;p&gt;&lt;label for=&quot;$NAME$&quot;&gt;$LABEL$&lt;/label&gt;&#10;    {!! Form::$text$('$NAME$', null, ['class' =&gt; 'form-control']) !!}&#10;&lt;/p&gt;" description="form input" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="name" alwaysStopAt="true" />
     <variable name="LABEL" expression="" defaultValue="label" alwaysStopAt="true" />
+    <variable name="text" expression="" defaultValue="text" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
@@ -85,6 +86,13 @@
       <option name="PHP String Literal" value="true" />
       <option name="HAML" value="true" />
       <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="blade-form" value="{!! Form::open(['url' =&gt; '/']) !!}&#10;&#10;{!! Form::submit('Submit',['class' =&gt; 'btn btn-success']) !!}&#10;{!! Form::close() !!}" description="blade from" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
     </context>
   </template>
 </templateSet>
