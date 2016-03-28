@@ -95,4 +95,34 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="air-page" value="@extends('layouts.app')&#10;@section('cover')&#10;    &lt;h1&gt;&#10;        $PAGETITLE$&#10;    &lt;/h1&gt;&#10;@section('content')&#10;    &lt;div class=&quot;container&quot;&gt;&#10;        &lt;div class=&quot;row&quot;&gt;&#10;            &lt;div class=&quot;col-md-8&quot;&gt;&#10;                &lt;article&gt;&#10;                    &lt;h1&gt;&#10;                        About Us&#10;                    &lt;/h1&gt;&#10;                    &lt;p&gt;{{ $page_instructions or '' }}&lt;/p&gt;&#10;                &lt;/article&gt;&#10;            &lt;/div&gt;&#10;            &lt;div class=&quot;col-md-4&quot;&gt;&#10;                @include('shared.sidebar-actions')&#10;            &lt;/div&gt;&#10;        &lt;/div&gt;&#10;&#10;    &lt;/div&gt;&#10;@endsection&#10;" toReformat="true" toShortenFQNames="true">
+    <variable name="PAGETITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_TEXT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="SQL" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="Twig" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="PHP Comment" value="false" />
+      <option name="PHP String Literal" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
 </templateSet>
