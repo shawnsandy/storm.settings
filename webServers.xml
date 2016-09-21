@@ -2,12 +2,16 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="d3e7aed7-5a92-4388-be6b-4496b1e4b330" name="vjf" url="http://192.168.200.100">
-        <fileTransfer host="192.168.200.100" port="21" username="vjfcspftp">
+        <fileTransfer host="192.168.200.100" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
+          <option name="port" value="21" />
         </fileTransfer>
       </webServer>
     </option>
+  </component>
+  <component name="webServersAuthStorage">
+    <data>AAAAcMjUZyYbwZyj0C1C5eKDr6Op+wA+f+LSew9Uj655dfHAjBVH/FmIjQrvtwklOL3GLiEFTpimDM82yVsPjlr0LGZhOiWlHru/FNSNVVWrf/pPUbNGiGq5LPoFQj1KNpXpW+LBQfFJM9Uz8GexLPFM5OSqgUzsbZUtim+q6Ti45C30</data>
   </component>
 </application>
