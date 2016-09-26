@@ -9,9 +9,17 @@
           <option name="port" value="21" />
         </fileTransfer>
       </webServer>
+      <webServer id="f7fd523e-9fee-4171-a7a9-ce5b7186d80f" name="MyFlorida" url="http://192.168.200.210">
+        <fileTransfer host="192.168.200.210" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
   <component name="webServersAuthStorage">
-    <data>AAAAcAelzUqpS+FPp3xNEdpwLMBqNubJnb+YDjlQefuZYOzu3mS4t5ToS2WhVGryRExs5FOIkJXjjxW3secNkUJAfNT5ZKOMQwT9sqNWsETRHa0pgxK2vFrm2LTJ54D3lNndyI+D98Ji/LedLOpONR4r25OmGvpOCsMgVeVFXZcwXhSo</data>
+    <data>AAAA4Ae7AoUPajbRXZwU5nXdvGFttLqiwZ8jvG4mVEwh9idP09RUOfcFelmFX7JYjO6/70eT+pTOIi6osCbZNsW1VZCwtx8NxIcbNxXBGo2v/JNTS+Red+nv0wfmPCfvkkwa6v+2q2+2rB2NAtul6/lHZlE7G4WVmRcZ3ooHRZ3Jiz72zGR/uQVc0D9EOvoWya7rvWb1gy6xd2dX5DCnDp3HMukyhBoalPZ2GMwgGCyKbO71e/oWCyuEvGhNXeHW8yvkHXcUlaXQZ3smMSfVmlWt3BM76Te7kRjMX5arW6tVZDYE2vxdU+XSm5yV+K2gKrhS4w==</data>
   </component>
 </application>
